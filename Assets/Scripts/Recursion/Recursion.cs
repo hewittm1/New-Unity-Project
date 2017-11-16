@@ -1,12 +1,21 @@
-﻿using System.Collections;
+﻿
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Recursion : MonoBehaviour {
     public int factorial;
+
+
+    public bool factFor,fact;
+
     private void Start()
     {
-        FactFor();
+        if (factFor)
+            FactFor();
+        else if (fact)
+            Debug.Log(Fact(factorial));
+        //else if()
     }
     void FactFor()
     {
@@ -17,5 +26,11 @@ public class Recursion : MonoBehaviour {
             Debug.Log(total);
         }
         Debug.Log(total);
+    }
+    int Fact(int num)
+    {
+        if (num == 0)
+            return 1;                             
+        return num * Fact(num-1);
     }
 }

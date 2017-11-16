@@ -90,6 +90,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Interfaces\InterfacesExample.cs" />
     <Compile Include="Assets\Scripts\Partial\Example2.cs" />
     <Compile Include="Assets\Scripts\Partial\ExampleOne.cs" />
     <Compile Include="Assets\Scripts\Recursion\Recursion.cs" />
